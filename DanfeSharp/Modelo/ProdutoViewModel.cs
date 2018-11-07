@@ -96,6 +96,19 @@ namespace DanfeSharp.Modelo
         public double? AliquotaIpi { get; set; }
 
         /// <summary>
+        /// <para>Código de barras universal, ou seja, é um identificador que é aplicado aos produtos</para>
+        /// <para>Tag cEAN </para>
+        /// </summary>
+        public string CEan { get; set; }
+
+
+        /// <summary>
+        /// <para>Código de barras Tributável</para>
+        /// <para>Tag cEANTrib  </para>
+        /// </summary>
+        public string CEanTrib { get; set; }
+
+        /// <summary>
         /// <para>Valor aproximado total de tributos federais, estaduais e municipais. [NT2013.003]</para>
         /// <para>Tag vTotTrib</para>
         /// </summary>
@@ -117,7 +130,7 @@ namespace DanfeSharp.Modelo
                 {
                     descriCaoCompleta += "\r\n" + InformacoesAdicionais;
                 }
-                
+
                 return descriCaoCompleta;
             }
         }

@@ -237,6 +237,8 @@ namespace DanfeSharp.Modelo
                 produto.ValorUnitario = det.prod.vUnCom;
                 produto.ValorTotal = det.prod.vProd;
                 produto.InformacoesAdicionais = det.infAdProd;
+                produto.CEan = det.prod.cEAN;
+                produto.CEanTrib = det.prod.cEANTrib;
 
                 var imposto = det.imposto;
 
